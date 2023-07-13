@@ -6,6 +6,7 @@ import { appRoutes } from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AddTodoComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [BrowserModule, RouterModule.forRoot(appRoutes), BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
